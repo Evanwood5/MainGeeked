@@ -1,0 +1,13 @@
+.footer__wrapper
+{
+    background-color:var(--clr-5);
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-top:.6rem;
+    padding-bottom:.6rem;
+    background-color:white;
+}
+
+

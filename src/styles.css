@@ -1,1 +1,230 @@
 /* You can add global styles to this file, and also import other style files */
+
+.btn{
+    display:inline-block;
+    font-weight:600;
+    text-decoration:none;
+    letter-spacing:-0.05em;
+    background-color: var(--clr-6);
+    color: #f1f5f9;
+
+    /*em padding to be proportional to text of button*/
+    padding: .5em 1em;
+    border-radius:6px;
+    /*aning an "a" and a number at the end gives us an opacity for our color */
+    box-shadow: 0 10px 20px rgba(98, 216, 83, 0.5),
+     0 6px 6px rgba(68, 163, 84, 0.5),
+    0 0 100px -10px var(--clr-6);
+
+    transition: transform 0.3s, box-shadow .3s;
+}
+
+
+.btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow: 0 14px 28px  rgba(98, 216, 83, 0.25),
+    0 10px 10px rgba(68, 163, 84, 0.22),
+   0 0 120px -10px var(--clr-rose);
+}
+
+
+/*building mobile first using min, everything by defult is for smaller screens then 475px*/
+
+/*dont short hand container like setting margin to 0 as this will not allow us to customize elemts within*/
+.container {
+/* 
+    Set the container's width to 100% to ensure it spans the entire width of the parent element.
+    Usually, percentages are not used for container widths, but for screens under 475px, it's a necessary adjustment.
+    */
+    width: 100%;
+    /* 
+    Center the container horizontally by setting margin-left and margin-right to auto.
+    This ensures the container is centered within its parent element.
+    */
+    margin-left: auto;
+    margin-right: auto;
+    /* 
+    Add padding to the left and right of the container.
+    This ensures there is space inside the container, preventing content from touching the edges and improving readability.
+    */
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    /*To help us see the border*/
+   /* border:1px solid red; */
+    
+
+}
+
+/* xs */
+@media(min-width:475px){
+    /*this is what will make our viewport shrink as our container touches it
+    also making max width of this container 475 px*/
+    .container {
+        max-width:475px;
+    }
+ }
+
+/* sm */
+ @media(min-width:640px){
+    .container {
+        max-width:640px;
+    }
+ }
+
+/* md */
+@media(min-width:768px){
+    .container {
+        max-width:768px;
+    }
+ }
+
+
+/* lg */
+@media(min-width:1024px){
+    .container {
+        max-width:1024px;
+    }
+}
+
+/* xl */
+@media(min-width:1280px){
+    .container {
+        max-width:1280px;
+    }
+} 
+
+/* 2xl */
+@media(min-width:1536px){
+    .container {
+        max-width:1536px;
+    }
+} 
+
+
+
+/*we use this to space out our containers*/
+.section
+{
+    margin-top:5rem;
+}
+
+
+/*this is where we wil build our color variables and sizing variables*/
+:root{
+    --clr-1: #0a0a0a ;
+    --clr-2:#f1f5f9 ;
+    --clr-3:#94a3b8 ;
+    --clr-4:#5c687a ;
+    --clr-5:#1E2124 ;
+    
+    --clr-6: #3AE459;
+    --clr-7: #4dd866;
+    --clr-8:#00A218;
+    --clr-9:#067517;
+    --clr-10:#067517;
+    --clr-11:#003609;
+    --clr-12:yellow;
+    --clr-13:#ECFF41;
+
+     --clr-14: rgb(19, 19, 20);
+
+    
+    /*rose rgb(220, 38, 38) */
+    
+    /*indigo rgb(79, 70, 229)*/
+    
+    /*sizes from tailwind css*/
+    --size-xxs: .5rem ;
+    --size-xs: .75rem ;
+    --size-sm: .875rem;
+    --size-base: 1rem ;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem ;
+    --size-2xl: 1.5rem ;
+    --size-2_5xl:1.6rem;
+    --size-3xl:1.875rem ;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+    
+    }
+
+    *
+    {
+        
+        margin:0;
+        /*this allows for correct line height regardless of font size*/
+        line-height: calc(1em + .5rem);
+       
+         
+    }
+    
+    html{
+        /*this makes scrolling to different sections a transition*/
+        scroll-behavior:smooth;
+      
+    }
+
+    
+/*when working with js for chaging color*/
+.light-mode
+{
+--clr-light: #000000;
+--clr-dark:#f1f5f9 ;
+--clr-slate400:#1e293b;
+--clr-slate600:#1e293b ;
+--clr-slate800:#1e293b ;
+}
+
+body{
+    font-family: 'General Sans',sans-serif;
+    background-color:black;
+    color:var(--clr-4);
+    
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg{
+
+    /*helps with everthing coltrol wise (padding, sizing, etc*/
+    display:block;
+    /*Ensures the elements do not overflow their container.*/
+    max-width: 100%;
+    /*pevents users from selecting or highlighting these elements.*/
+    user-select: none;
+}
+
+button{
+    /*makes button look very bland but we do this to not have to mess with defualt settings*/
+    display: inline-block;
+    padding:0;
+    border:none;
+    background:none;
+    cursor:pointer;
+    /*this will make our color inherent the color of its parent*/
+    color:inherit;
+
+}
+
+a{
+    color:var(--clr-rose)
+}
+
+strong{
+    color:var(--clr-3)
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: #f1f1f1 !important;
+}

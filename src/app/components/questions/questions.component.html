@@ -1,0 +1,209 @@
+<!-- questions.component.html -->
+
+
+
+<div class="question__background" id="Process">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C3F53C" fill-opacity="1" d="M0,320L20,314.7C40,309,80,299,120,282.7C160,267,200,245,240,218.7C280,192,320,160,360,160C400,160,440,192,480,192C520,192,560,160,600,128C640,96,680,64,720,85.3C760,107,800,181,840,181.3C880,181,920,107,960,85.3C1000,64,1040,96,1080,122.7C1120,149,1160,171,1200,154.7C1240,139,1280,85,1320,85.3C1360,85,1400,139,1420,165.3L1440,192L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+  <div class="container">
+    <div class="question__header">
+      <h2>Process Of Development.</h2>
+    </div>
+
+    <div class="question__wrapper">
+      <div>
+
+        <!-- Button Container -->
+      <div class="question__questions">
+        <!-- Button 1 -->
+        <button class="question__title-button"
+          [ngClass]="{'active': activeSection === 'planning'}" 
+          (click)="showSection('planning')">
+          Planning
+        </button>
+
+        <!-- Button 2 -->
+        <button class="question__title-button"
+          [ngClass]="{'active': activeSection === 'design'}" 
+          (click)="showSection('design')">
+          Designing
+        </button>
+
+        <!-- Button 3 -->
+        <button class="question__title-button"
+          [ngClass]="{'active': activeSection === 'build'}" 
+          (click)="showSection('build')">
+          Building/Deployment
+        </button>
+      </div>
+
+
+      </div>
+      
+
+
+
+      <div>  
+      <!-- Answers Sections -->
+      <div class="question__answers-planning" *ngIf="activeSection === 'planning'">
+        <!-- Answers for Planning -->
+        <div class="question__subtitle">
+          <h3>Title</h3>
+        </div>
+
+        <div class="question__context">
+          <button class="question__button" (click)="handleButtonClick($event)">
+            <h2 class="Question__head">Audience
+              <i #icon class="fa-solid fa-plus"></i>
+            </h2>
+          </button>
+          <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+          </p>
+          <hr class="question__line">
+        </div>
+
+        <div class="question__context">
+          <button class="question__button" (click)="handleButtonClick($event)">
+            <h2 class="Question__head">Goals
+              <i #icon class="fa-solid fa-plus"></i>
+            </h2>
+          </button>
+          <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+          <hr class="question__line">
+        </div>
+
+        <div class="question__context">
+          <button class="question__button" (click)="handleButtonClick($event)">
+            <h2 class="Question__head">Research
+              <i #icon class="fa-solid fa-plus"></i>
+            </h2>
+          </button>
+          <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+          <hr class="question__line">
+        </div>
+
+        <div class="question__context">
+          <button class="question__button" (click)="handleButtonClick($event)">
+            <h2 class="Question__head">Sitemap
+              <i #icon class="fa-solid fa-plus"></i>
+            </h2>
+          </button>
+          <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+            Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+          <hr class="question__line">
+        </div>
+      </div>
+
+
+        <div class="question__answers-design" *ngIf="activeSection === 'design'">
+          <!-- Answers for Designing -->
+          <div  class="question__subtitle">
+            <h3>Title</h3>
+          </div>
+  
+
+
+          <div class="question__context">
+            <button class="question__button" (click)="handleButtonClick($event)">
+              <h2 class="Question__head">
+                Identify Audice
+                <i #icon class="fa-solid fa-plus"></i>
+              </h2>
+            </button>
+            <p  class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+            <hr class="question__line">
+          </div>
+          
+
+          <div class="question__context">
+            <button class="question__button" (click)="handleButtonClick($event)">
+              <h2 class="Question__head">Animations 
+                <i #icon class="fa-solid fa-plus"></i>
+              </h2>
+            </button>
+            <p class="collapsible-content">To make your website really pop, we want to ensure
+                 to have animations that make you stand out.</p>
+                 <hr class="question__line">
+          </div>
+
+          <div class="question__context">
+            <button class="question__button" (click)="handleButtonClick($event)">
+              <h2 class="Question__head">proffesion design
+                <i #icon class="fa-solid fa-plus"></i>
+              </h2>
+            </button>
+            <p class="collapsible-content">To make your website really pop, we want to ensure
+                 to have animations that make you stand out.</p>
+                 <hr class="question__line">
+          </div>
+        </div>
+  
+        <div  class="question__answers-build" *ngIf="activeSection === 'build'">
+          <!-- Answers for Building/Deployment -->
+          <div  class="question__subtitle">
+            <h3>Title</h3>
+          </div>
+  
+          <div class="question__context">
+            <button class="question__button" (click)="handleButtonClick($event)">
+              <h2 class="Question__head">Time-Frame
+                <i #icon class="fa-solid fa-plus"></i>
+              </h2>
+            </button>
+            <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+            <hr class="question__line">
+          </div>
+  
+          <div class="question__context">
+            <button class="question__button" (click)="handleButtonClick($event)">
+              <h2 class="Question__head"> Updates
+                <i #icon class="fa-solid fa-plus"></i>
+              </h2>
+            </button>
+            <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+            <hr class="question__line">
+          </div>
+  
+          <div class="question__context">
+            <button class="question__button" (click)="handleButtonClick($event)">
+              <h2 class="Question__head">Domain Name
+                <i #icon class="fa-solid fa-plus"></i>
+              </h2>
+            </button>
+            <p class="collapsible-content">Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp
+              Testing things out fnqn  fnqpfnqpw fnpqfn nfpqnfp</p>
+            <hr class="question__line">
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="custom-shape-divider-bottom-1724689672">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+</div>
+
