@@ -1,32 +1,63 @@
 <div class="background">
-
     <div class="hero2__wrapper container">
-        <!--fact one-->
-        <div class="hero2__content">
-            <h2 class="hero2__header">First  Impressions Matter</h2>
-            <p class="hero2__description"> <strong class="hero2__strong1"> 94% </strong> of first impressions are related to your site’s web design. Users judge a website's credibility based on its appearance, and poor design can cause them to lose trust immediately.</p>
-        </div>
-    
-        <!--fact two-->
-    
-        <div class="hero2__content">
-            <h2 class="hero2__header">  Boosts Conversion Rates</h2>
-            <p class="hero2__description">   
-                Well-designed websites can lead to higher conversion rates. Even small improvements in design can increase conversions by<strong class="hero2__strong1"> 50% to 75%</strong> , directly impacting your business's success.</p>
+      <!--fact one-->
+      <div class="hero2__content" [ngClass]="{'open': activeContent === 1}">
+        <div class="testing">
+
+          <h2 class="hero2__header">
+            First Impressions Matter
+           
+          </h2>
+          <button class="arrow__color" (click)="toggleContent(1)">
+            <i class="fa-solid" [ngClass]="{'fa-chevron-up': activeContent === 1, 'fa-chevron-down': activeContent !== 1}"></i>
+          </button>
+
         </div>
         
-    
-        <!--fact three-->
-        <div class="hero2__content">
-            <h2 class="hero2__header">Enhances User  Experience</h2>
-            <p class="hero2__description"> <strong class="hero2__strong1"> 88%</strong> of online consumers are less likely to return to a site after a bad experience., and 38% of people will stop engaging with a website if the content or layout is unattractive. </p>
+
+        <p class="hero2__description">
+          <strong class="hero2__strong1">94%</strong> of first impressions are related to your site’s web design. Users judge a website's credibility based on its appearance, and poor design can cause them to lose trust immediately.
+        </p>
+      </div>
+  
+      <!--fact two-->
+      <div class="hero2__content" [ngClass]="{'open': activeContent === 2}">
+       
+       <div class="testing">
+        <h2 class="hero2__header">
+          Boosts Conversion Rates
+         
+        </h2>
+        <button class="arrow__color" (click)="toggleContent(2)">
+          <i class="fa-solid" [ngClass]="{'fa-chevron-up': activeContent === 2, 'fa-chevron-down': activeContent !== 2}"></i>
+        </button>
+
+       </div>
+       
+        <p class="hero2__description">
+          Well-designed websites can lead to higher conversion rates. Even small improvements in design can increase conversions by <strong class="hero2__strong1">50% to 75%</strong>, directly impacting your business's success.
+        </p>
+      </div>
+  
+      <!--fact three-->
+      <div class="hero2__content" [ngClass]="{'open': activeContent === 3}">
+      
+        <div class="testing">
+
+          <h2 class="hero2__header">
+            Enhances User Experience
+            
+          </h2>
+          <button class="arrow__color" (click)="toggleContent(3)">
+            <i class="fa-solid" [ngClass]="{'fa-chevron-up': activeContent === 3, 'fa-chevron-down': activeContent !== 3}"></i>
+          </button>
+
         </div>
-    
-    
+       
+        <p  class="hero2__description">
+          <strong class="hero2__strong1">88%</strong> of online consumers are less likely to return to a site after a bad experience, and 38% of people will stop engaging with a website if the content or layout is unattractive.
+        </p>
+      </div>
     </div>
-    
-    
-    
-
-</div>
-
+  </div>
+  

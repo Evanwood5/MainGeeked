@@ -1,0 +1,357 @@
+
+
+
+.header
+{
+    background-color:transparent;
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    top:0;
+    width:100%;
+
+        /*for java*/
+    
+        z-index:9999;
+     
+}
+
+.sticky {
+    width:100%;
+    position:fixed;
+    
+    left:0%;
+    z-index:999;
+    background-color: #000000; /* Background color for the sticky state */
+    box-shadow: 0 2px 5px rgba(248, 248, 248, 0.2); /* Add shadow for visual effect */
+    transition: all .3s ease-in-out; /* Smooth transition */
+    
+}
+
+.header__hr
+{
+    border: none; /* Remove the default border */
+    height: .08px; /* Set the desired thickness */
+    background-color:var(--clr-3); /* Set the color of the line */
+  
+}
+.header__menu
+{
+    display:none;
+}
+
+
+.header__a
+{
+    display:none;
+}
+
+.header__logo img
+{
+    display:none;
+}
+
+
+.header__bars 
+{
+    color: var(--clr-2);
+    width: var(--size-2xl); /* Set width of the bars button */
+    height: var(--size-2xl); /* Set height of the bars button */
+    display:block;
+
+    /*justify content to the right*/
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.header__bars svg
+{
+    height:1.5rem;
+    width:1.5rem;
+}
+
+
+@media(min-width:475px)
+{
+.header__bars svg
+{
+    height:2rem;
+    width:2rem
+}
+}
+
+@media(min-width:640px)
+{
+    .header__bars svg
+{
+    height:2rem;
+    width:2rem;
+}
+}
+
+/*makes header change anything above 768px*/
+@media(min-width:768px)
+{
+
+/* In your header.component.css */
+.header {
+    position:fixed;
+    top:0%;
+    left:0%;
+    width:100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition:.3s;
+    z-index:99;
+    padding-top:.2rem;
+    padding-bottom:.3rem;
+        /*this allows for margin sides */
+        box-sizing: border-box;
+ }
+ 
+ /* Overwrite or ensure specificity to prevent global overrides */
+ 
+
+.header__twitter
+{
+    color:white;
+
+    
+    font-size:1.2rem;
+    margin-bottom:0rem;
+    padding-top:.4rem;
+
+}
+
+.twitter__wrapper
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:flex-end;
+    gap:2rem;
+   
+}
+
+.header__twitter:hover
+{
+    color:var(--clr-1);
+}
+
+
+.header__a{
+    text-decoration:none;
+    display:block;
+}
+
+
+.header__wrap1
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    
+   
+}
+.header__geeked
+{
+    display:block;
+    margin-top:.5rem;
+    font-size:var(--size-base);
+    color:var(--clr-2);
+   
+
+}
+
+.header__menu
+{
+   
+    margin-top:.5rem;
+    display:flex;
+    align-items:center;
+    list-style:none;
+
+    gap:2em;
+}
+
+
+/*need to add directly to a */
+.header__link a
+{
+    
+  
+    font-size:var(--size-xs);
+    text-decoration:none;
+    font-weight:600;
+    color:var(--clr-2);
+    letter-spacing:-.05em;
+    position:relative;
+    /*for hovering*/
+
+}
+
+.header__link a:hover
+{
+    color:var(--clr-1);
+}
+
+
+
+
+.header__line
+{
+    border:1px solid var(--clr-2);
+    padding-top:1.5rem
+}
+
+
+.header__build
+{
+    font-size:.6rem;
+    
+    pointer-events: auto; 
+    letter-spacing: 0.05em; 
+    text-transform:capitalize;
+    
+    transition: all 0.3s ease; 
+    display:inline-block;
+    font-weight:600;
+    text-decoration:none;
+    letter-spacing:-0.05em;
+    background-color: #DEC16C;
+    border:1px solid var(--clr-1);
+    color: var(--clr-1);
+    
+    /*em padding to be proportional to text of button*/
+    padding: .5em 1em;
+    border-radius:6px;
+    transition: background-color 0.1s ease, border 0.1s ease, transform 0.1s ease;
+
+   
+}
+.header__build:hover{
+   background:#DEC16C;
+   border:1px solid var(--clr-2);
+   color:var(--clr-1) ;
+
+}
+
+/*make it so you cant see the header bars */
+.header__bars
+{
+    display:none;
+}
+
+.header__logo img
+{
+  
+    
+    height:2rem;
+    width:2rem;
+    display:block;
+
+}
+
+
+
+}
+
+
+/*makes header change anything above 1024px*/
+@media(min-width:1024px){
+
+    .header__twitter
+    {
+
+        padding-bottom:0rem;
+
+    }
+
+    .header {  
+        padding-left: 7.5rem;
+        padding-right: 4rem;
+        
+    }
+.header__link a{
+    font-size:var(--size-sm)
+}
+
+
+
+
+.header__sun{
+    width:var(--size-xl);
+    height:var(--size--xl);
+}
+
+
+
+.header__build
+{
+    font-size:.7rem;
+    padding: .3em .8em;
+}
+
+}
+
+@media(min-width:1280px)
+{
+    .header__link a{
+        font-size:.9rem;
+    }
+
+    .header__geeked
+{
+    font-size:var(--size-lg);
+}
+
+.header {
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+}
+}
+
+@media(min-width:1536px)
+{
+
+
+
+    .header {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    
+    }
+
+.header__sun
+{
+   
+    color:var(--clr-7);
+    height:1.4rem;
+    width:1.4rem;
+
+}
+
+.header__twitter
+{
+    color:white;
+
+    
+    font-size:1.4rem;
+    margin-bottom:.2rem;
+    
+}
+
+.twitter__wrapper
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:flex-end;
+    gap:2rem;
+
+}
+
+}

@@ -20,15 +20,38 @@
 .custom-shape-divider-bottom-1724689672 .shape-fill {
     fill: #FFFFFF;
 }
+
 /*wave */
 
+/*second wave*/
+.custom-shape-divider-bottom-1726808329 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1726808329 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 36px;
+}
+
+.custom-shape-divider-bottom-1726808329 .shape-fill {
+    fill: #000000;
+}
+
+/*second wave*/
 
 .question__background
 {
     background: var(--clr-14);
     
-    min-height: 56vh;
+    min-height: 65vh;
     position:relative;
    
 }
@@ -37,7 +60,8 @@
 {
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
+
     
 
     max-width:100%;
@@ -48,16 +72,28 @@
 
 .question__header
 {
+    font-size:var(--size-xs);
 
     color:white;
+    
+  
+    
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
 
-    max-width:100%;
-
+.question__header h2{
+    max-width:20ch;
 }
 
 .Question__head
 {
     color:white;
+    font-size:var(--size-sm);
+
 }
 
 .question__questions
@@ -68,35 +104,24 @@
     align-items:left;
     justify-content:top;
     max-width:100%;
+    margin-bottom:2rem;
    
 
 }
 
 /*three cards */
 
-.question__answers-planning
+.question__answers
 {
     display:flex;
     flex-direction:column;
     align-items:center;
+
     max-width:100%;
+    margin-bottom:5rem;
 }
 
-.question__answers-design
-{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    max-width:100%;
-}
 
-.question__answers-build
-{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    max-width:100%;
-}
 
 /*three cards */
 
@@ -107,6 +132,7 @@
     background-color: var(--clr-14); /* Inactive color */
     transition: border 0.3s ease; /* Add transition for smooth effect */
     padding:.3rem;
+    font-size:var(--size-xs);
 
 
 }
@@ -146,7 +172,7 @@
 
 .question__context p {
     margin-top: 5px;
-    font-size: 14px;
+   
     color: #666;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
@@ -173,7 +199,7 @@
 .fa-plus,
 .fa-minus
 {
-    font-size:1rem;
+    font-size:.8rem;
     color:var(--clr-6);
     vertical-align: middle;
     
@@ -209,19 +235,18 @@
     text-align:left;
     width:100%;
     margin-bottom:1rem;
+    font-size:var(--size-base);
     
 }
 
 .collapsible-content
 {
-    max-width:30ch;
+    max-width:25ch;
+    font-size:var(--size-xs);
+   
 }
 
-.question__context
-{
- padding-right:1rem;
 
-}
 
 .header
 {
@@ -231,13 +256,14 @@
 @media(min-width:475px){
     .question__title-button
     {
-        font-size: var(--size-base);
+        font-size: var(--size-sm);
     }
 
 
     .question__header
     {
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
+        padding-top:3rem;
     }
 
     .question__subtitle
@@ -245,10 +271,11 @@
         font-size: var(--size-lg);
     }
 
-    .question__header
+    .collapsible-content
     {
-        padding-top:3rem;
+        max-width:34ch;
     }
+        
 
  }
 /* sm */
@@ -257,7 +284,7 @@
 
     .question__title-button
     {
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
     }
 
 
@@ -278,7 +305,7 @@
     
 .collapsible-content
 {
-    max-width:50ch;
+    max-width:40ch;
 }
     
  }
@@ -297,19 +324,54 @@
      
         display:flex;
         flex-direction:row;
-        justify-content:space-between;
+        justify-content:space-around;
+        align-items:flex-start;
+ 
+
+
+    }
+
+    .question__questions
+    {
+    
+        padding-top:0rem;
+
+
 
     }
 
 
     .question__header
     {
-        text-align:left;
+        
         margin-bottom:3rem;
-     
+        justify-content:left;
+        margin-left:5rem;
 
-    
     }
+
+    .question__header h2
+    {
+        max-width:30ch;
+    }
+
+    .question__background
+{
+    background: var(--clr-14);
+   
+    min-height: 75vh;
+    position:relative;
+   
+}
+
+.Question__head
+{
+    font-size: var(--size-base);
+
+}
+
+
+
 
  }
 
@@ -330,36 +392,37 @@
     {
         padding-right:0rem;
     }
-    .question__header
-    {
-    
-        padding-left:6.7rem;
-    }
 
     .question__title-button
     {
-        font-size: var(--size-xl);
+        font-size: var(--size-lg);
     }
 
 
     .question__header
     {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
+        padding-left:3.8rem;
     }
 
     .question__subtitle
     {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 
     .Question__head
     {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 
 }
 /* xl */
 @media(min-width:1280px){
+
+    .question__questions
+    {
+        margin-left:3rem;
+    }
 
     .question__background
     {
@@ -377,31 +440,40 @@
 
     .question__title-button
     {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 
-
-    .question__header
-    {
-        font-size: var(--size-3xl);
-    }
 
     .question__subtitle
     {
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
 
     .Question__head
     {
-        font-size: var(--size-3xl);
+        font-size: var(--size-xl);
     }
+
+    .collapsible-content
+    {
+        font-size: var(--size-base); 
+    }
+
+    .fa-plus,
+.fa-minus
+{
+    font-size:1rem;
+    color:var(--clr-6);
+    vertical-align: middle;
+    
+}
 } 
 
 /* 2xl */
 @media(min-width:1536px){
 
     .question__header{
-        padding-top:7rem;
+        padding-top:0rem;
         padding-bottom:2rem;
     }
 
@@ -409,7 +481,8 @@
     {
         background: var(--clr-14);
         
-        min-height: 120vh;
+        min-height: 100vh;
+   
     }
 
     
@@ -418,5 +491,15 @@
     
         padding-left:14rem;
     }
+
+    .question__questions
+    {
+        margin-left:4.7rem;
+    }
     
+    .Question__head{
+        font-size: var(--size-2xl);
+    }
+
+
 } 

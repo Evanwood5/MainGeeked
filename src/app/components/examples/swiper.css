@@ -1,6 +1,7 @@
 .swiper1
 {
-    height:35rem;
+    height:34rem;
+    width:18rem;
     border-radius:15px;
     border:1px solid white;
     margin-top:2rem;
@@ -16,6 +17,78 @@
 .swiper-button-prev
 {
     color:white;
+    
+}
+@media(min-width:475px)
+{
+    .swiper1
+    {
+        height:36rem;
+        width:24rem;
+    
+    }
+
 }
 
 
+@media(min-width:640px)
+{
+
+    .swiper1
+    {
+        height:36rem;
+        width:28rem;
+    
+    }
+
+}
+
+
+@media(min-width:768px)
+{
+    .swiper1
+    {
+        height:36rem;
+        width:35rem;
+    
+    }
+}
+
+@media(min-width:1024px)
+{
+    .swiper1
+    {
+        height:25rem;
+        width:55rem;
+    
+    }
+
+}
+
+
+@media(min-width:1280px)
+{
+
+    .swiper1
+{
+    height:27rem;
+    width:65rem;
+
+}
+
+}
+
+
+@media(min-width:1536px)
+{
+    .swiper1
+{
+    height:29rem;
+    width:65rem;
+    border-radius:15px;
+    border:1px solid white;
+    margin-top:2rem;
+}
+
+
+}

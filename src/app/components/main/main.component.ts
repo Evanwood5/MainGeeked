@@ -6,6 +6,9 @@ import { ExamplesComponent } from '../examples/examples.component';
 import { QuestionsComponent } from '../questions/questions.component';
 import { MediaComponent } from '../media/media.component';
 import { FooterComponent } from '../footer/footer.component';
+import { Mobile1Component } from "../mobile1/mobile1.component";
+
+
 @Component({
   selector: 'app-main',
   standalone: true,
@@ -17,8 +20,8 @@ import { FooterComponent } from '../footer/footer.component';
     QuestionsComponent,
     MediaComponent,
     FooterComponent,
-    
-  ],
+    Mobile1Component
+],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })

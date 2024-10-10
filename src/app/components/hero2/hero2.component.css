@@ -6,6 +6,43 @@
     justify-content:center;
     margin-top:2rem;
     gap:1rem;
+   
+}
+
+.hero2__content {
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+}
+
+.hero2__description
+{
+    text-align:center;
+    font-size:var(--size-xs);
+    max-width:40ch;
+    max-height: 0; /* Initially hidden */
+    opacity: 0; /* Initially invisible */
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+
+}
+
+.hero2__content.open .hero2__description {
+    max-height: 200px; /* Adjust based on content size */
+    opacity: 1; /* Make visible */
+}
+
+.hero2__content .fa-chevron-down {
+    transition: transform 0.3s ease; /* Ensure smooth rotation */
+}
+
+/* When content is open, rotate the icon to point up */
+.hero2__content.open .fa-chevron-down {
+    transform: rotate(180deg); /* Rotate to point up */
+}
+
+.arrow__color
+{
+ 
+    color:red;
 
 }
 
@@ -18,18 +55,15 @@
 {
     text-align:center;
     color:var(--clr-2);
+    font-size:var(--size-sm);
+    
 }
 
-.hero2__description
-{
-    text-align:center;
-    font-size:var(--size-sm);
-    max-width:40ch
-}
+
 
 .hero2__strong1
 {
- color:var(--clr-6);
+ color:var(--clr-2);
 }
 
 .hero2__strong2
@@ -42,10 +76,19 @@
     color:var(--clr-12);
 }
 
+.testing
+{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-direction:center;
+}
+
 /* xs */
 @media(min-width:475px){
 
-    .hero2__description
+.hero2__description
 {
 
     max-width:55ch
@@ -59,26 +102,15 @@
     {
         text-align:center;
         color:var(--clr-2);
-        font-size:var(--size-4xl);
+        font-size:var(--size-base);
     }
     
     .hero2__description
     {
         text-align:center;
-        font-size:var(--size-base);
-        max-width:60ch
+        font-size:var(--size-xs);
+        max-width:40ch
     }
-
- }
-
-/* md */
-@media(min-width:768px){
-
- }
-
-
-/* lg */
-@media(min-width:1024px){
 
     .hero2__wrapper
     {
@@ -86,11 +118,27 @@
         flex-direction:row;
         align-items:flex-start;
         justify-content:center;
-        margin-top:2rem;
         gap:1rem;
-
+     
         margin-top:0rem;
     }
+
+
+
+ }
+
+/* md */
+@media(min-width:768px){
+
+    
+
+
+
+ }
+
+
+/* lg */
+@media(min-width:1024px){
 
 
 
@@ -98,14 +146,14 @@
     {
         text-align:center;
         color:var(--clr-2);
-        font-size:var(--size-2xl);
+        font-size:var(--size-lg);
     }
     
     .hero2__description
     {
         text-align:center;
-        font-size:var(--size-base);
-        max-width:60ch
+        font-size:var(--size-sm);
+        max-width:40ch
     }
 
 
@@ -113,7 +161,8 @@
 
 /* xl */
 @media(min-width:1280px){
-
+    
+    
 } 
 
 /* 2xl */
@@ -123,13 +172,13 @@
     {
         text-align:center;
         color:var(--clr-2);
-        font-size:var(--size-3xl);
+        font-size:var(--size-xl);
     }
     
     .hero2__description
     {
         text-align:center;
-        font-size:var(--size-base);
-        max-width:60ch
+        font-size:var(--size-sm);
+        max-width:45ch
     }
 } 

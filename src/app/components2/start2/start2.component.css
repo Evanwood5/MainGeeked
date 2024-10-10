@@ -1,0 +1,367 @@
+
+
+
+
+.contact__background1
+{
+
+position:absolute;
+top: 32rem;         /* Distance from the top of the parent */
+left: 0rem;
+width:100%;        /* Distance from the left of the parent */
+}
+
+
+.contant__left-title h3
+{
+    padding-top:2rem;
+    text-align:center;
+    color:var(--clr-3);
+    font-size:var(--size-lg);
+
+}
+
+
+.contact__inputs
+{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    padding:2rem;
+    width:100%;
+    
+  
+    /*keeps everything inside the box*/
+    box-sizing: border-box; 
+
+}
+
+.contact__inputs input
+{
+   border-radius:5px; 
+   padding:.3rem;
+
+   width:100%;
+}
+.contact__inputs textarea
+{
+   
+    border-radius:5px; 
+    padding:.3rem;
+    width:100%;
+    resize: none;
+    height:7rem;
+    
+}
+
+.contact__btn
+{
+    border:1px solid white;
+    color:white;
+    width:100%;
+
+    border-radius:5px; 
+    
+}
+
+.contact__container
+{
+  
+    width:100%;
+    max-width: 400px;
+    padding-left:1rem;
+
+
+}
+
+
+.contact__wrapper
+{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:3rem;
+}
+
+.contact__info
+{
+    padding-top:2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:0rem;
+
+   
+}
+
+.contact__info h3{
+
+color:var(--clr-2);
+text-align:center;
+font-size:var(--size-lg);
+
+
+}
+
+.contact__info p{
+    max-width:40ch;
+    text-align:center;
+    width:100%;
+    padding-top:1rem;
+
+
+
+}
+
+
+
+.button__wrapper2
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:0rem;
+   
+    
+}
+
+
+
+
+
+
+.drop__down
+{
+   
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.drop__down p
+{
+    padding:1.3rem;
+    text-align:center;
+    max-width:40ch;
+  
+
+}
+
+
+.contact__icons
+{
+    padding-top:2rem;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:.5rem;
+
+    width:100%;
+    
+
+}
+
+#icon_colors
+{
+    color:#DEC16C;
+}
+
+/* xs */
+@media(min-width:475px){
+
+
+ }
+
+/* sm */
+ @media(min-width:640px){
+
+    .contact__container
+{
+  
+    width:100%;
+    max-width: 500px;
+  
+    padding-left:1rem;
+}
+
+
+
+
+.contact__info h3
+{
+    font-size:var(--size-xl)
+}
+
+.contact__info p
+{
+
+}
+
+.contant__left-title h3
+{
+ 
+    font-size:var(--size-xl);
+
+}
+
+.contact__btn
+{
+    padding:.3rem;
+  
+}
+
+
+
+ }
+
+/* md */
+@media(min-width:768px){
+
+
+
+
+
+ 
+.button__wrapper2
+{
+    padding-top:0rem;
+    
+}
+
+.contact__wrapper
+{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:flex-start;
+    padding-top:1.5rem;
+}
+
+
+.contact__info h3
+{
+    text-align:left;
+   
+    width:100%;
+    
+}
+
+.contact__info p
+{
+    text-align:left;
+    max-width:58ch;
+    padding-top:2rem;
+}
+
+
+.contact__icons
+{
+    padding-top:2rem;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+    gap:.5rem;
+
+    width:100%;
+
+
+    
+
+}
+
+.contact__icons i
+{
+    font-size:1.3rem;
+
+}
+
+
+
+
+ }
+
+
+/* lg */
+@media(min-width:1024px){
+
+    .contact__info p
+    {
+        max-width:30ch;
+    }
+    
+    
+
+
+}
+
+/* xl */
+@media(min-width:1280px){
+
+    .contact__info h3
+{
+    font-size:var(--size-2xl)
+}
+
+
+.contant__left-title h3
+{
+ 
+    font-size:var(--size-2xl);
+
+}
+
+
+.drop__down p
+{
+    padding:1.3rem;
+    text-align:center;
+    max-width:80ch;
+    font-size:var(--size-lg);
+
+}
+
+
+.contact__info p
+{
+    font-size:var(--size-lg);
+}
+
+} 
+
+/* 2xl */
+@media(min-width:1536px){
+    
+
+    .contact__info h3
+    {
+        font-size:var(--size-3xl)
+    }
+    
+    
+    .contant__left-title h3
+    {
+     
+        font-size:var(--size-3xl);
+    
+    }
+
+    .contact__wrapper
+    {
+        padding-left:10rem;
+        padding-right:10rem;
+        
+    }
+
+} 

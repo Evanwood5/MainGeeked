@@ -7,13 +7,15 @@
     margin-top:3rem;
     height:100%;
     width:100%;
-    
 
 }
+
 
 .background
 {
     background-color:black;
+    border:1px solid black;
+
 }
 
 .hero__img img
@@ -21,8 +23,8 @@
     margin-top:3rem;
     padding-left:1rem;
     padding-right:1rem;
-    height:20rem;
-    width:20rem;
+    height:15rem;
+    width:17rem;
 
 }
 
@@ -31,7 +33,7 @@
     text-align:center;
     line-height:1.2;
     color:var(--clr-2);
-    font-size:var(--size-3xl);
+    font-size:var(--size-xl);
     max-width:20ch;
     font-weight:800;
 
@@ -48,12 +50,14 @@
         -webkit-background-clip: text;
         color: transparent;
         font-weight:800;
+     
+
 }
 
 .hero__description
 {
     text-align:center;
-    font-size:var(--size-sm);
+    font-size:var(--size-xs);
     color:var(--clr-4);
     max-width:40ch;
 }
@@ -65,7 +69,6 @@
     align-items:center;
     justify-content:center;
     gap:1rem;
-    
 
 }
 
@@ -73,7 +76,7 @@
 {
     letter-spacing: 0.05em; 
     text-transform:capitalize;
-    font-size:var(--size-sm);
+    font-size:var(--size-xs);
 
 
     display:inline-block;
@@ -95,7 +98,7 @@
 {
     letter-spacing: 0.05em; 
     text-transform:capitalize;
-    font-size:var(--size-sm);
+    font-size:var(--size-xs);
     transition: all 0.3s ease; 
     display:inline-block;
     font-weight:600;
@@ -134,12 +137,16 @@
 @media(min-width:475px)
 {
 
+    .hero__flex
+    {
+        padding-top:.5rem;
+    }
 
     .hero
     {
         /*in between each peice on content within hero we will have a gap*/
         gap:1rem;
-        height:55rem;
+        height:50rem;
         
     }
     
@@ -147,7 +154,7 @@
     .hero__subtitle
     {
     
-    font-size:var(--size-5xl);
+    font-size:var(--size-3xl);
     
     }
     
@@ -156,7 +163,7 @@
     .hero__description
     {
     
-        font-size:var(--size-base);
+        font-size:var(--size-sm);
     }
     
     .hero__btn1,
@@ -170,8 +177,8 @@
     margin-top:3rem;
     padding-left:1rem;
     padding-right:1rem;
-    height:27rem;
-    width:27rem;
+    height:24rem;
+    width:24rem;
 
     }
 
@@ -181,33 +188,47 @@
 @media(min-width:640px)
 {
 
+    .hero
+    {
+        /*in between each peice on content within hero we will have a gap*/
+        gap:1rem;
+        height:50rem;
+    }
+    
+
 .hero__subtitle
 {
     text-align:center;
     line-height:1.2;
     color:var(--clr-2);
-    font-size:var(--size-6xl);
+    font-size:var(--size-4xl);
     max-width:25ch;
     
 }
 
 .hero__description
 {
-
     font-size:var(--size-lg);
-    max-width:45ch;
+    max-width:58ch;
+    line-height: 2rem;
 }
 
 
 .hero__img img
 {
-    margin-top:0rem;
+    
     padding-left:1rem;
     padding-right:1rem;
     margin-top:2rem;
-    height:25rem;
+    height:23rem;
     width:25rem;
 
+}
+
+.hero__flex{
+
+    gap:2rem;
+    padding-top:1rem;
 }
 
 }
@@ -220,7 +241,7 @@
     .hero
     {
    
-        height:55rem;
+        height:60rem;
       
       margin-top:5.5rem;
     }
@@ -248,9 +269,12 @@
         position:relative;
         display:flex;
         flex-direction:row;
-        align-items:flex-start;
+        align-items:space-between;
+        justify-content:center;
+        gap:0rem;
         padding-top:2rem;
         height:40rem;
+        
      
     }
 
@@ -262,7 +286,8 @@
 
       
         height:100%;
-        gap:1.5rem;
+        gap:2rem;
+        
         
     }
     
@@ -270,9 +295,10 @@
     {
        
         /*sizing of image preportional to parent*/
-        width:35rem;
-        height:35rem;
+        width:30rem;
+        height:30rem;
         padding:0rem;
+        margin:0rem;
        
     }
     
@@ -281,7 +307,7 @@
     
     padding-top:2rem;
     text-align:left;
-    font-size:var(--size-5xl);
+    font-size:var(--size-4xl);
     max-width:15ch;
     
     }
@@ -292,8 +318,8 @@
     {
     
         text-align:left;
-        font-size:var(--size-xl);
-        max-width:36ch;
+        font-size:var(--size-base);
+        max-width:44ch;
       
     }
     
@@ -310,7 +336,7 @@
     .hero__btn2
     {
        
-        font-size:var(--size-base);
+        font-size:var(--size-sm);
     }
         
 
@@ -329,8 +355,9 @@
         display:flex;
         flex-direction:row;
         align-items:flex-start;
-        margin-top:3rem;
-        height:55rem
+        margin-top:5rem;
+        height:46rem;
+        
         
 
     }
@@ -339,8 +366,9 @@
     {
     
         /*sizing of image preportional to parent*/
-        width:45rem;
-        height:45rem;
+        width:30rem;
+        height:30rem;
+       margin-top:4rem;
         
         
     }
@@ -349,7 +377,7 @@
     .hero__subtitle
     {
     padding-top:3rem;
-    font-size:var(--size-6xl);
+    font-size:var(--size-5xl);
     }
     
 
@@ -358,15 +386,15 @@
     {
     
         
-        font-size:var(--size-2xl);
-        max-width: 36ch;
+        font-size:var(--size-lg);
+        max-width: 44ch;
       
     }
 
     .hero__btn1,
     .hero__btn2
     {
-        font-size:var(--size-lg);
+        font-size:var(--size-sm);
     }
         
 
@@ -380,15 +408,16 @@
     {
     
         /*sizing of image preportional to parent*/
-        width:45rem;
-        height:45rem;
+        width:35rem;
+        height:35rem;
         
     }
     
     .hero__subtitle
     {
     padding-top:3rem;
-    font-size:var(--size-7xl);
+    font-size:var(--size-6xl);
+    max-width:15ch;
     }
     
 
@@ -397,24 +426,27 @@
     {
     
         
-        font-size:var(--size-2xl);
+        font-size:var(--size-lg);
       
     }
 
     .hero__btn1,
     .hero__btn2
     {
-        font-size:var(--size-lg);
+        font-size:var(--size-base);
     }
     
     .hero__flex
     {
-        gap:1.5rem;
+       
+        gap:2rem;
     }
 
     .hero{
     display:flex;
-    gap:3rem;
+    gap:0rem;
+    margin-top:5rem;
+
     
     }
     
