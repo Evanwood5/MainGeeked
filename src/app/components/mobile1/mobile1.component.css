@@ -1,3 +1,8 @@
+.navigation{
+    position:absolute;
+   
+}
+
 .testing.active
 {
   
@@ -11,6 +16,7 @@
    justify-content:flex-start;
    align-items:flex-end;
    z-index:999999999;
+
   
 }
 
@@ -31,10 +37,12 @@
     align-items:center;
     background:black;
     
-    width:7rem; /* Remove default margin */
+    width:14rem; /* Remove default margin */
+    height:19rem;
     padding: 0; /* Remove default padding */
     list-style-type: none; /* Remove bullet points */
 
+    gap:.5rem;
     padding-top:2rem;
     position:fixed;
     top:0%;
@@ -55,6 +63,7 @@
 
 .t{
     text-decoration: none;
+    font-size:var(--size-lg);
 }
 
 
@@ -75,6 +84,10 @@
     height:30px;
     padding-right:1rem;
 
+
+  
+
+
     z-index:999999999999;
 }
 
@@ -86,8 +99,8 @@
 
 .hamburger svg
 {
-    height:1.5rem;
-    width:1.5rem;
+    height:1.9rem;
+    width:1.9rem;
 }
 
 
@@ -114,22 +127,21 @@
    
     z-index:999999999999;
 
-    font-size:var(--size-lg);
+    font-size:var(--size-xl);
     padding-right:1.1rem;
 
 }
 
+
+
 @media(min-width:475px){
 
+    .t{
+        text-decoration: none;
+        font-size:var(--size-xl);
+    }
+    
 
-    .x.active
-{
-
-
-    font-size:var(--size-xl);
-  
-
-}
     .hamburger svg
     {
 
@@ -181,17 +193,19 @@
     border-radius:5px;
       display:flex;
       flex-direction:column;
-      justify-content:flex-start;
-      align-items:flex-start;
+      justify-content:center;
+      align-items:center;
       background:black;
       
-      width:9rem; /* Remove default margin */
+      width:15rem; /* Remove default margin */
+      height:24rem;
       padding-left: 1rem; /* Remove default padding */
       list-style-type: none; /* Remove bullet points */
   
       padding-top:2rem;
       position:fixed;
       top:0%;
+      gap:1rem;
   
   
   }
@@ -203,6 +217,15 @@
     padding-top:.5rem;
 
    
+}
+
+.x.active
+{
+
+
+    font-size:var(--size-xl);
+  
+
 }
 
  }

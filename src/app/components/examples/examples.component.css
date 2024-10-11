@@ -67,11 +67,12 @@ border-radius:20px;
 .about__subtitle1
 {
     padding-top:5rem;
-    font-size:var(--size-3xl);
+    font-size:var(--size-2xl);
     
     text-align: center;
     color: var(--clr-2);
     padding-bottom:1rem;
+    max-width:20ch;
     
 
 
@@ -177,7 +178,7 @@ width:2rem;
 .about__subtitle1
 {
     
-    font-size:var(--size-xl);
+    font-size:var(--size-3xl);
 }
 
 .about__subtitle2

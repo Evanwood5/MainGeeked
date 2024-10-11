@@ -7,6 +7,7 @@
     margin-top:3rem;
     height:100%;
     width:100%;
+    
 
 }
 
@@ -33,7 +34,7 @@
     text-align:center;
     line-height:1.2;
     color:var(--clr-2);
-    font-size:var(--size-xl);
+    font-size:var(--size-2xl);
     max-width:20ch;
     font-weight:800;
 
@@ -146,7 +147,7 @@
     {
         /*in between each peice on content within hero we will have a gap*/
         gap:1rem;
-        height:50rem;
+        height:45rem;
         
     }
     
@@ -162,7 +163,7 @@
     
     .hero__description
     {
-    
+        line-height: 1.5rem;
         font-size:var(--size-sm);
     }
     
@@ -177,8 +178,8 @@
     margin-top:3rem;
     padding-left:1rem;
     padding-right:1rem;
-    height:24rem;
-    width:24rem;
+    height:20rem;
+    width:22rem;
 
     }
 
@@ -208,7 +209,7 @@
 
 .hero__description
 {
-    font-size:var(--size-lg);
+    font-size:var(--size-sm);
     max-width:58ch;
     line-height: 2rem;
 }
@@ -220,8 +221,8 @@
     padding-left:1rem;
     padding-right:1rem;
     margin-top:2rem;
-    height:23rem;
-    width:25rem;
+    height:22rem;
+    width:23rem;
 
 }
 
@@ -238,12 +239,21 @@
 @media(min-width:768px)
 {
 
+
+    .hero__description
+{
+    font-size:var(--size-base);
+   
+}
+
+
     .hero
     {
    
-        height:60rem;
+        height:54rem;
       
       margin-top:5.5rem;
+      gap:2rem;
     }
 
 
@@ -252,8 +262,9 @@
     margin-top:0rem;
     padding-left:1rem;
     padding-right:1rem;
-    height:30rem;
-    width:30rem;
+    
+    height:25rem;
+    width:27rem;
 
 }
 
@@ -269,11 +280,11 @@
         position:relative;
         display:flex;
         flex-direction:row;
-        align-items:space-between;
+        align-items:flex-start;
         justify-content:center;
-        gap:0rem;
+        gap:3rem;
         padding-top:2rem;
-        height:40rem;
+        height:37rem;
         
      
     }
@@ -284,6 +295,7 @@
         align-items:flex-start;
         justify-content:flex-start;
 
+        padding-top:0rem;
       
         height:100%;
         gap:2rem;
@@ -295,8 +307,8 @@
     {
        
         /*sizing of image preportional to parent*/
-        width:30rem;
-        height:30rem;
+        width:25rem;
+        height:25rem;
         padding:0rem;
         margin:0rem;
        
@@ -305,9 +317,9 @@
     .hero__subtitle
     {
     
-    padding-top:2rem;
+    padding-top:0rem;
     text-align:left;
-    font-size:var(--size-4xl);
+    font-size:var(--size-3xl);
     max-width:15ch;
     
     }
@@ -318,7 +330,7 @@
     {
     
         text-align:left;
-        font-size:var(--size-base);
+        font-size:var(--size-xs);
         max-width:44ch;
       
     }
@@ -336,7 +348,7 @@
     .hero__btn2
     {
        
-        font-size:var(--size-sm);
+        font-size:var(--size-xs);
     }
         
 
@@ -356,7 +368,8 @@
         flex-direction:row;
         align-items:flex-start;
         margin-top:5rem;
-        height:46rem;
+        height:41rem;
+        gap:3rem;
         
         
 
@@ -366,8 +379,8 @@
     {
     
         /*sizing of image preportional to parent*/
-        width:30rem;
-        height:30rem;
+        width:28rem;
+        height:28rem;
        margin-top:4rem;
         
         
@@ -377,18 +390,15 @@
     .hero__subtitle
     {
     padding-top:3rem;
-    font-size:var(--size-5xl);
+    font-size:var(--size-4xl);
     }
     
 
     
     .hero__description
     {
-    
-        
-        font-size:var(--size-lg);
+        font-size:var(--size-sm);
         max-width: 44ch;
-      
     }
 
     .hero__btn1,
@@ -408,15 +418,16 @@
     {
     
         /*sizing of image preportional to parent*/
-        width:35rem;
-        height:35rem;
+        width:37rem;
+        height:37rem;
+        padding-left:5rem;
         
     }
     
     .hero__subtitle
     {
     padding-top:3rem;
-    font-size:var(--size-6xl);
+    font-size:var(--size-5xl);
     max-width:15ch;
     }
     
@@ -426,7 +437,7 @@
     {
     
         
-        font-size:var(--size-lg);
+        font-size:var(--size-base);
       
     }
 
@@ -439,13 +450,14 @@
     .hero__flex
     {
        
-        gap:2rem;
+        gap:1rem;
     }
 
     .hero{
     display:flex;
     gap:0rem;
     margin-top:5rem;
+   padding-left:5.5rem;
 
     
     }

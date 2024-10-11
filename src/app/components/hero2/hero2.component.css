@@ -17,7 +17,7 @@
 .hero2__description
 {
     text-align:center;
-    font-size:var(--size-xs);
+    font-size:var(--size-xxs);
     max-width:40ch;
     max-height: 0; /* Initially hidden */
     opacity: 0; /* Initially invisible */
@@ -55,10 +55,9 @@
 {
     text-align:center;
     color:var(--clr-2);
-    font-size:var(--size-sm);
+    font-size:var(--size-xs);
     
 }
-
 
 
 .hero2__strong1
@@ -88,27 +87,17 @@
 /* xs */
 @media(min-width:475px){
 
-.hero2__description
-{
-
-    max-width:55ch
-}
-
- }
-
-/* sm */
- @media(min-width:640px){
     .hero2__header
     {
         text-align:center;
         color:var(--clr-2);
-        font-size:var(--size-base);
+        font-size:var(--size-xs);
     }
     
     .hero2__description
     {
         text-align:center;
-        font-size:var(--size-xs);
+        font-size:var(--size-xxs);
         max-width:40ch
     }
 
@@ -127,10 +116,22 @@
 
  }
 
+/* sm */
+ @media(min-width:640px){
+ 
+
+ }
+
 /* md */
 @media(min-width:768px){
 
-    
+    .hero2__description
+    {
+        text-align:center;
+        font-size:var(--size-xs);
+        max-width:35ch
+    }
+
 
 
 
@@ -146,15 +147,16 @@
     {
         text-align:center;
         color:var(--clr-2);
-        font-size:var(--size-lg);
+        font-size:var(--size-base);
     }
     
     .hero2__description
     {
         text-align:center;
-        font-size:var(--size-sm);
+        font-size:var(--size-xs);
         max-width:40ch
     }
+
 
 
 }
@@ -172,7 +174,7 @@
     {
         text-align:center;
         color:var(--clr-2);
-        font-size:var(--size-xl);
+        font-size:var(--size-base);
     }
     
     .hero2__description

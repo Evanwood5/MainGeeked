@@ -51,7 +51,7 @@
 {
     background: var(--clr-14);
     
-    min-height: 65vh;
+    min-height: 70vh;
     position:relative;
    
 }
@@ -85,7 +85,8 @@
     align-items:center;
 }
 
-.question__header h2{
+.question__header h1{
+    font-size:var(--size-2xl);
     max-width:20ch;
 }
 
@@ -260,9 +261,10 @@
     }
 
 
-    .question__header
+    .question__header h1
     {
-        font-size: var(--size-base);
+        font-size: var(--size-3xl);
+        max-width:40ch;
         padding-top:3rem;
     }
 
@@ -275,12 +277,29 @@
     {
         max-width:34ch;
     }
+
+    .question__background
+{
+    background: var(--clr-14);
+    
+    min-height: 78vh;
+    position:relative;
+   
+}
         
 
  }
 /* sm */
  @media(min-width:640px){
 
+    .question__background
+    {
+        background: var(--clr-14);
+        
+        min-height: 88vh;
+        position:relative;
+       
+    }
 
     .question__title-button
     {
@@ -359,7 +378,7 @@
 {
     background: var(--clr-14);
    
-    min-height: 75vh;
+    min-height: 80vh;
     position:relative;
    
 }
@@ -415,20 +434,29 @@
         font-size: var(--size-xl);
     }
 
+    .question__background
+    {
+        background: var(--clr-14);
+        
+        min-height: 86vh;
+        position:relative;
+       
+    }
+
 }
 /* xl */
 @media(min-width:1280px){
 
     .question__questions
     {
-        margin-left:3rem;
+        margin-left:5rem;
     }
 
     .question__background
     {
         background: var(--clr-14);
         
-        min-height: 80vh;
+        min-height: 96vh;
     }
     
 
@@ -472,25 +500,28 @@
 /* 2xl */
 @media(min-width:1536px){
 
-    .question__header{
-        padding-top:0rem;
+    .question__header
+    {
+        padding-top:2rem;
         padding-bottom:2rem;
+       
+        padding-left:14rem;
+       
     }
+    .question__header h1
+    {
+        font-size:var(--size-4xl);
+    }
+    
 
     .question__background
     {
         background: var(--clr-14);
-        
-        min-height: 100vh;
+        min-height: 114vh;
    
     }
 
-    
-    .question__header
-    {
-    
-        padding-left:14rem;
-    }
+
 
     .question__questions
     {
