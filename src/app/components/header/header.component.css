@@ -203,9 +203,9 @@
     font-weight:600;
     text-decoration:none;
     letter-spacing:-0.05em;
-    background-color: var(--clr-1);
-    border:1px solid var(--clr-2);
-    color: var(--clr-2);
+    background-color: var(--clr-6);
+    border:1px solid var(--clr-6);
+    color: var(--clr-1);
     
     /*em padding to be proportional to text of button*/
     padding: .5em 1em;
@@ -215,8 +215,8 @@
    
 }
 .header__build:hover{
-   background:var(--clr-6);
-   border:1px solid var(--clr-6);
+   background:#26bb41;
+   border:1px solid #26bb41;
    color: var(--clr-1);
 
 }

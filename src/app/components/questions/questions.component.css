@@ -282,7 +282,7 @@
 {
     background: var(--clr-14);
     
-    min-height: 78vh;
+    min-height: 81vh;
     position:relative;
    
 }
@@ -296,7 +296,7 @@
     {
         background: var(--clr-14);
         
-        min-height: 88vh;
+        min-height: 91vh;
         position:relative;
        
     }
@@ -378,7 +378,7 @@
 {
     background: var(--clr-14);
    
-    min-height: 80vh;
+    min-height: 83vh;
     position:relative;
    
 }
@@ -438,7 +438,7 @@
     {
         background: var(--clr-14);
         
-        min-height: 86vh;
+        min-height: 89vh;
         position:relative;
        
     }
@@ -456,7 +456,7 @@
     {
         background: var(--clr-14);
         
-        min-height: 96vh;
+        min-height: 99vh;
     }
     
 
@@ -517,7 +517,7 @@
     .question__background
     {
         background: var(--clr-14);
-        min-height: 114vh;
+        min-height: 117vh;
    
     }
 
