@@ -41,8 +41,8 @@
 
 .title__header img{
     
-    width:10rem;
-    height:10rem;
+    width:12rem;
+    height:12rem;
  
 
 }
@@ -304,7 +304,14 @@
     }
 
 
-
+    .title__header img{
+    
+        width:12rem;
+        height:12.5rem;
+        margin-right:26rem;
+     
+    
+    }
 
 
 .drop__down p
@@ -314,6 +321,8 @@
     font-size:var(--size-base);
 
 }
+
+
 
 
 
@@ -331,6 +340,14 @@
  
     }
 
+    .title__header img{
+    
+        width:12rem;
+        height:12.5rem;
+        margin-right:40rem;
+     
+    
+    }
 
 
 } 

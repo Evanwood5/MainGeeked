@@ -1,11 +1,17 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 import { AppComponent } from './app/app.component';
-// for swiper js to work
-import { register as registerSwiperElements } from 'swiper/element/bundle';
+import { routes } from './app/app.routes';
 
-// also for swiper js to work
-registerSwiperElements();
-
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter(
+      routes,
+      withComponentInputBinding(),
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top', // Scrolls to the top on all navigation
+        anchorScrolling: 'enabled'        // Scrolls to the element with matching fragment in the URL
+      })
+    )
+  ]
+}).catch(err => console.error(err));

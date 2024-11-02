@@ -13,6 +13,5 @@ export const routes: Routes = [
 
   { path: 'Main3', component: Main3Component},
 
-  
 
 ];

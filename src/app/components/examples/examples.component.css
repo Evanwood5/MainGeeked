@@ -41,18 +41,15 @@
 }
 
 
-.image-content1 img{
-
-    height:9rem;
-    width:10rem;
-   
-}
 
 .image1 {
-width:100%;
-height:100%;
+width:9rem;
+height:10rem;
 transition: transform 0.5s ease; 
 border-radius:20px;
+will-change: transform;
+
+
 }
 
 
@@ -192,10 +189,10 @@ width:2rem;
     max-width:50ch;
     font-size:var(--size-base);
 }
-.image-content1 img{
+.image1{
 
-    height:11rem;
-    width:13rem;
+    height:12.5rem;
+    width:12rem;
    
 }
 
@@ -221,9 +218,9 @@ width:2.3rem;
         font-size:var(--size-3xl);
     }
 
-    .image-content1 img{
+    .image1{
 
-        height:11rem;
+        height:13rem;
         width:12rem;
        
     }
@@ -276,10 +273,10 @@ width:2.3rem;
 
     }
 
-    .image-content1 img{
+    .image1{
 
-        height:12rem;
-        width:15rem;
+        height:13.5rem;
+        width:13rem;
        
     }
 
@@ -334,7 +331,8 @@ width:2.3rem;
         
         display:flex;
         flex-direction:row;
-        justify-content:space-around;
+        justify-content:center;
+        gap:1rem;
         
 
     }
@@ -345,11 +343,11 @@ width:2.3rem;
         
     }
 
-.image-content1 img{
+.image1{
 
 
     height:16rem;
-    width:16rem;
+    width:15rem;
    
 }
 
@@ -384,10 +382,10 @@ width:2.3rem;
 @media(min-width:1280px){
     
 
-    .image-content1 img{
+    .image1{
 
-        height:21rem;
-        width:21rem;
+        height:20rem;
+        width:19rem;
        
     }
 
@@ -425,6 +423,9 @@ width:2.3rem;
     margin-top:0rem;
 }
 
+.card1{
+    gap:3rem;
+}
 
 } 
 
@@ -443,7 +444,8 @@ width:2.3rem;
         
         display:flex;
         flex-direction:row;
-        justify-content:space-around;
+        justify-content:center;
+        gap:5rem;
 
     }
 
@@ -485,9 +487,9 @@ width:2.3rem;
 
 
 
-.image-content1 img{
-    width:23rem;
-    height:23rem;
+ .image1{
+    width:20rem;
+    height:22rem;
 
    
 }
