@@ -206,7 +206,7 @@ strong{
 }
 
 
-.swiper-pagination-bullet-active {
-    background-color: #f1f1f1 ;
+.swiper-pagination-bullets {
+    color: #f1f1f1 ;
    
 }
