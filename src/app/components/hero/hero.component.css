@@ -51,7 +51,7 @@
        
         
         font-weight: bold;
-        background: linear-gradient(to right, var(--clr-9),var(--clr-6), var(--clr-13), var(--clr-12));
+        background: linear-gradient(to right, var(--clr-6),  var(--clr-12));
         -webkit-background-clip: text;
         color: transparent;
         font-weight:800;
